@@ -10,7 +10,7 @@ var canvas = document.getElementById("render-canvas");
     box.rotation.y = -0.4;
 
     var boxMaterial = new BABYLON.StandardMaterial("material", scene);
-    boxMaterial.emissiveColor = new BABYLON.Color3(0, 0.58, 0.86);
+    boxMaterial.emissiveColor = new BABYLON.Color3(0.03, 0.40, 0.26);
     box.material = boxMaterial;
 
     var torus = BABYLON.Mesh.CreateTorus("torus", 1, 0.5, 15, scene);
@@ -18,7 +18,7 @@ var canvas = document.getElementById("render-canvas");
     torus.rotation.x = 1.5;
 
     var torusMaterial = new BABYLON.StandardMaterial("material", scene);
-    torusMaterial.emissiveColor = new BABYLON.Color3(0.4, 0.4, 0.4);
+    torusMaterial.emissiveColor = new BABYLON.Color3("black");
     torus.material = torusMaterial;
 
     var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 1, 1, 1, 12, 1, scene);
@@ -26,7 +26,7 @@ var canvas = document.getElementById("render-canvas");
     cylinder.rotation.x = -0.2;
     
     var cylinderMaterial = new BABYLON.StandardMaterial("material", scene);
-    cylinderMaterial.emissiveColor = new BABYLON.Color3(1, 0.58, 0);
+    cylinderMaterial.emissiveColor = new BABYLON.Color3(2, 0.58, 0);
     cylinder.material = cylinderMaterial;
 
     var t = 0;
